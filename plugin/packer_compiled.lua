@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["hop.nvim"] = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/hop.nvim",
@@ -133,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/nord-vim",
     url = "https://github.com/arcticicestudio/nord-vim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -188,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

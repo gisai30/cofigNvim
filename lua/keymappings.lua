@@ -5,12 +5,12 @@ local opts = { silent = true, noremap = true }
 vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', { noremap = true, silent = true })
 vim.g.mapleader = ' '
 
-
 -- Exit to normal mode
 vim.api.nvim_set_keymap('i', 'qq', '<ESC>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'qi', '<ESC>wa', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'qe', '<ESC>ei', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'ql', '<ESC>la', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', 'q,', '<ESC>la,', { noremap = true, silent = true })
 
 
 vim.api.nvim_set_keymap('i', 'qo', '<ESC>o', { noremap = true, silent = true })
@@ -19,13 +19,14 @@ vim.api.nvim_set_keymap('i', 'qo', '<ESC>o', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'qq', '<ESC>', { noremap = true, silent = true })
 -- Saving and exit
 
-vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>ww', ':w<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>wq', ':wq<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>eq', ':q<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>qq', ':q<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>dq', ':q!<CR>', { noremap = true, silent = true })
 
 -- Close buffer
 keymap.set('n', 'bd', ':bd<cr>')
+keymap.set('n', 'bqd', ':bd!<cr>')
 
 -- Delete backword
 keymap.set('n', 'dw', 'vb"_d')
@@ -51,10 +52,11 @@ vim.api.nvim_set_keymap('n', '<leader>ff', ":Telescope find_files <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fb', ":Telescope buffers <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fs', ":Telescope current_buffer_fuzzy_find <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>ft', ":Telescope <CR>", opts)
+vim.api.nvim_set_keymap('n', '<leader>fi', ":Telescope treesitter <CR>", opts)
 
 --Lspsaga
-vim.keymap.set('n', '<C-j>', ':Lspsaga diagnostic_jump_next<cr>', opts)
-vim.keymap.set('n', 'K', ':Lspsaga hover_doc<cr>', opts)
+keymap.set('n', '<C-j>', ':Lspsaga diagnostic_jump_next<cr>', opts)
+keymap.set('n', 'K', ':Lspsaga hover_doc<cr>', opts)
 vim.keymap.set('n', 'gd', ':Lspsaga lsp_finder<cr>', opts)
 vim.keymap.set('n', '<C-k>', ':Lspsaga diagnostic_jump_prev<cr>', opts)
 vim.keymap.set('n', 'gp', ':Lspsaga preview_definition<cr>', opts)
