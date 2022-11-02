@@ -26,7 +26,8 @@ require('packer').startup(function(use)
 
 	--Thems
 	use 'joshdick/onedark.vim'
-	use 'arcticicestudio/nord-vim'
+	-- use 'arcticicestudio/nord-vim'
+	use 'shaunsingh/nord.nvim'
 	use 'nvim-lualine/lualine.nvim'
 
 	-- Autocomplete

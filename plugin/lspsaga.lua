@@ -1,6 +1,42 @@
 local status, saga = pcall(require, 'lspsaga')
-if (status) then return end
+if (not status) then return end
 
 saga.init_lsp_saga {
+	-- show outline
+	show_outline        = {
+		win_position = 'right',
+		--set special filetype win that outline window split.like NvimTree neotree
+		-- defx, db_ui
+		win_with = '',
+		win_width = 30,
+		auto_enter = true,
+		auto_preview = true,
+		virt_text = '┃',
+		jump_key = 'o',
+		-- auto refresh when change buffer
+		auto_refresh = true,
+	},
 	server_filetype_map = {},
+	-- custom_kind         = {
+	-- 	Field = '#000000'
+	-- },
+	code_action_keys    = {
+		tabe = 'l'
+	},
+	finder_action_keys  = {
+		tabe = 'l'
+	},
+
+	border_style = 'plus'
 }
+
+local keymap = vim.keymap.set
+local opts = { noremap = true, silent = true }
+
+keymap('n', '<C-j>', ':Lspsaga diagnostic_jump_next<cr>', opts)
+keymap('n', 'K', ':Lspsaga hover_doc<cr>', opts)
+keymap('n', 'gd', ':Lspsaga lsp_finder<cr>', opts)
+keymap('n', '<C-k>', ':Lspsaga diagnostic_jump_prev<cr>', opts)
+keymap('n', 'gp', ':Lspsaga preview_definition<cr>', opts)
+keymap('n', 'gr', ':Lspsaga rename<cr>', opts)
+keymap('n', '<C-l>', ':LSoutlineToggle<cr>', opts)

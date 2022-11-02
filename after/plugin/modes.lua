@@ -1,4 +1,7 @@
-require('modes').setup({
+local status, modes = pcall(require, 'modes')
+if (not status) then return end
+
+modes.setup({
 	colors = {
 		copy = "#f5c359",
 		delete = "#c75c6a",
