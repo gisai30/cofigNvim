@@ -59,3 +59,7 @@ vim.api.nvim_set_keymap('n', '<leader>fb', ":Telescope buffers <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fs', ":Telescope current_buffer_fuzzy_find <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>ft', ":Telescope <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fi', ":Telescope treesitter <CR>", opts)
+
+
+-- OUTLINE
+vim.api.nvim_set_keymap('n', '<C-l>', ':SymbolsOutline<cr>', opts)
