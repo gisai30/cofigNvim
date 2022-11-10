@@ -3,4 +3,7 @@ if (not status) then return end
 
 colorizer.setup {
 	'*';
+	html = {
+		mode = 'foreground';
+	}
 }

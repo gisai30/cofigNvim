@@ -17,4 +17,5 @@ vim.o.wrap = false
 
 -- -- Load the color Schema
 -- vim.g.nord_contrast = true
-vim.cmd [[colorscheme nord ]]
+-- vim.g.nord_borders = true
+vim.cmd [[colorscheme catppuccin-macchiato]]

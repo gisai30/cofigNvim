@@ -2,6 +2,8 @@ local status, nvim_lsp = pcall(require, 'lspconfig')
 if (not status) then return end
 
 local protocol = require('vim.lsp.protocol')
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local on_attach = function(client, bufnr)
 	-- formating
@@ -28,6 +30,14 @@ nvim_lsp.tsserver.setup {
 	on_attach = on_attach,
 	filetype = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
 	cmd = { "typescript-language-server", "--stdio" }
+}
+
+nvim_lsp.emmet_ls.setup {
+	-- on_attach = on_attach,
+	capabilities = capabilities,
+	cmd = { "emmet-ls", "--stdio" },
+	single_file_support = true,
+	filetype = { "html", "sass", "css", "scss" }
 }
 
 nvim_lsp.sumneko_lua.setup {

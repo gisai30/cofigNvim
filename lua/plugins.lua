@@ -30,6 +30,8 @@ require('packer').startup(function(use)
 	-- use 'arcticicestudio/nord-vim'
 	use 'shaunsingh/nord.nvim'
 	use 'nvim-lualine/lualine.nvim'
+	use { "catppuccin/nvim", as = "catppuccin" }
+	use "folke/twilight.nvim"
 
 	-- Autocomplete
 	use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
@@ -57,7 +59,8 @@ require('packer').startup(function(use)
 	use 'glepnir/lspsaga.nvim'
 
 	-- Dashboard
-	use 'glepnir/dashboard-nvim'
+	-- use 'glepnir/dashboard-nvim'
+	use { "goolord/alpha-nvim", require = 'kyazdani42/nvim-web-devicons' }
 
 	-- Prettier and NULL ls
 	use 'jose-elias-alvarez/null-ls.nvim'

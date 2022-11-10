@@ -5,6 +5,9 @@ let hola = () => {
 
 
 	}
+	const hola = 12
+	console.log(hola)
+	// hola mundo
 	getse()
 	return null
 	return false
@@ -13,6 +16,10 @@ let hola = () => {
 }
 
 import axios from 'axios'
+
+function hola() {
+	return null
+}
 
 export default class Tower {
 	constructor(ip) {

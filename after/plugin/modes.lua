@@ -3,14 +3,14 @@ if (not status) then return end
 
 modes.setup({
 	colors = {
-		copy = "#EBCB8B",
-		delete = "#BF616A",
-		insert = "#A3BE8C",
-		visual = "#B48EAD",
+		copy = "#eed49f",
+		delete = "#e78284",
+		insert = "#a6d189",
+		visual = "#ea76cb",
 	},
 
 	-- Set opacity for cursorline and number background
-	line_opacity = 0.25,
+	line_opacity = 0.30,
 
 	-- Enable cursor highlights
 	set_cursor = true,

@@ -79,10 +79,20 @@ _G.packer_plugins = {
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["alpha-nvim"] = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -93,11 +103,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["dashboard-nvim"] = {
-    loaded = true,
-    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
-    url = "https://github.com/glepnir/dashboard-nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -134,10 +139,10 @@ _G.packer_plugins = {
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/modes.nvim",
     url = "https://github.com/mvllow/modes.nvim"
   },
-  ["nord-vim"] = {
+  ["nord.nvim"] = {
     loaded = true,
-    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/nord-vim",
-    url = "https://github.com/arcticicestudio/nord-vim"
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -204,10 +209,20 @@ _G.packer_plugins = {
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["twilight.nvim"] = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
   },
   ["vim-commentary"] = {
     loaded = true,

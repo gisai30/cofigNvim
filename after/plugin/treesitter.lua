@@ -14,6 +14,8 @@ ts.setup {
 		'tsx',
 		'lua',
 		'json',
+		'scss',
+		'typescript',
 		'css',
 		'javascript',
 		'html'

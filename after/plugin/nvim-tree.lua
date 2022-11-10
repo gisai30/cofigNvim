@@ -146,7 +146,7 @@ nvim_tree.setup {
 	},
 	filters = {
 		dotfiles = false,
-		custom = {},
+		custom = { ".DS_Store" },
 		exclude = {},
 	},
 	filesystem_watchers = {
