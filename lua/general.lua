@@ -19,3 +19,4 @@ vim.o.wrap = false
 -- vim.g.nord_contrast = true
 -- vim.g.nord_borders = true
 vim.cmd [[colorscheme catppuccin-macchiato]]
+-- vim.cmd [[colorscheme catppuccin]]

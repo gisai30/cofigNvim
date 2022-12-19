@@ -26,6 +26,8 @@ vim.api.nvim_set_keymap('n', '<leader>qw', ':wq<CR>', { noremap = true, silent =
 vim.api.nvim_set_keymap('n', '<leader>qq', ':q<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>dq', ':q!<CR>', { noremap = true, silent = true })
 
+-- Go File
+keymap.set('n', 'nf', 'gf')
 -- Close buffer
 keymap.set('n', '<leader>bd', ':bd<cr>')
 keymap.set('n', '<leader>bq', ':bd!<cr>')
@@ -62,7 +64,7 @@ vim.api.nvim_set_keymap('n', '<d-p>', ":Telescope find_files <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>p', ":Telescope find_files <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fb', ":Telescope find_files <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fb', ":Telescope buffers <CR>", opts)
-vim.api.nvim_set_keymap('n', '<leader>fs', ":Telescope current_buffer_fuzzy_find <CR>", opts)
+vim.api.nvim_set_keymap('n', '<leader>s', ":Telescope current_buffer_fuzzy_find <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>ft', ":Telescope <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fi', ":Telescope treesitter <CR>", opts)
 

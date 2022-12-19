@@ -35,8 +35,8 @@ local opts = { noremap = true, silent = true }
 
 keymap('n', '<C-j>', ':Lspsaga diagnostic_jump_next<cr>', opts)
 keymap('n', 'K', ':Lspsaga hover_doc<cr>', opts)
-keymap('n', 'gd', ':Lspsaga lsp_finder<cr>', opts)
+keymap('n', 'nd', ':Lspsaga lsp_finder<cr>', opts)
 keymap('n', '<C-k>', ':Lspsaga diagnostic_jump_prev<cr>', opts)
-keymap('n', 'gp', ':Lspsaga preview_definition<cr>', opts)
-keymap('n', 'gr', ':Lspsaga rename<cr>', opts)
+keymap('n', 'np', ':Lspsaga preview_definition<cr>', opts)
+keymap('n', 'nr', ':Lspsaga rename<cr>', opts)
 -- keymap('n', '<C-l>', ':LSoutlineToggle<cr>', opts)

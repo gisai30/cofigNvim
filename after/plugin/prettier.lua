@@ -2,7 +2,7 @@ local status, prettier = pcall(require, 'prettier')
 if (not status) then return end
 
 prettier.setup {
-	bin = 'prettierd',
+	bin = 'prettier',
 	filetype = {
 		'css',
 		'javascript',
@@ -12,5 +12,8 @@ prettier.setup {
 		'json',
 		'scss',
 		'less'
+	},
+	cli_options = {
+		tconfig_precedence = "prefer-file",
 	}
 }

@@ -9,7 +9,7 @@ catp.setup {
 		functions = { "italic", "bold" },
 		keywords = { "italic" },
 		operators = { "bold" },
-		conditionals = { "bold" },
+		conditionals = { "italic", "bold" },
 		loops = { "bold" },
 		booleans = { "bold", "italic" },
 		numbers = {},
