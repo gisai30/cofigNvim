@@ -11,15 +11,16 @@ end
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
+	on_attach = on_attach,
 	auto_reload_on_write = true,
 	create_in_closed_folder = false,
 	disable_netrw = true,
 	hijack_cursor = true,
 	hijack_netrw = true,
 	hijack_unnamed_buffer_when_opening = false,
-	ignore_buffer_on_setup = false,
-	open_on_setup = false,
-	open_on_setup_file = false,
+	-- ignore_buffer_on_setup = false,
+	-- open_on_setup = false,
+	-- open_on_setup_file = false,
 	open_on_tab = false,
 	ignore_buf_on_tab_change = {},
 	sort_by = "name",
@@ -28,7 +29,7 @@ nvim_tree.setup {
 	sync_root_with_cwd = false,
 	reload_on_bufenter = false,
 	respect_buf_cwd = false,
-	on_attach = "disable", -- function(bufnr). If nil, will use the deprecated mapping strategy
+	-- on_attach = "disable", -- function(bufnr). If nil, will use the deprecated mapping strategy
 	remove_keymaps = false, -- boolean (disable totally or not) or list of key (lhs)
 	view = {
 		adaptive_size = false,
@@ -128,7 +129,7 @@ nvim_tree.setup {
 		update_root = false,
 		ignore_list = {},
 	},
-	ignore_ft_on_setup = {},
+	-- ignore_ft_on_setup = {},
 	system_open = {
 		cmd = "",
 		args = {},
