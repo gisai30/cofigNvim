@@ -45,3 +45,4 @@ keymap('n', '<C-l>', ':Lspsaga outline<cr>', opts)
 -- New Commands lsp
 keymap('n', '<leader>lsf', ':Lspsaga finder<cr>', opts)
 keymap('n', '<leader>lsg', ':Lspsaga goto_definition<cr>', opts)
+keymap('n', '<leader>lst', ':Lspsaga term_toggle<cr>', opts)
