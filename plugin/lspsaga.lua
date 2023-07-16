@@ -33,10 +33,15 @@ saga.setup {
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
+keymap('n', '<leader>ls', ':Lspsaga ', opts)
 keymap('n', '<C-j>', ':Lspsaga diagnostic_jump_next<cr>', opts)
 keymap('n', 'K', ':Lspsaga hover_doc<cr>', opts)
-keymap('n', 'nd', ':Lspsaga lsp_finder<cr>', opts)
+-- keymap('n', 'nd', ':Lspsaga lsp_finder<cr>', opts)
 keymap('n', '<C-k>', ':Lspsaga diagnostic_jump_prev<cr>', opts)
-keymap('n', 'np', ':Lspsaga preview_definition<cr>', opts)
-keymap('n', 'nr', ':Lspsaga rename<cr>', opts)
+-- keymap('n', 'np', ':Lspsaga preview_definition<cr>', opts)
+keymap('n', '<leader>lsr', ':Lspsaga rename<cr>', opts)
+keymap('n', '<C-l>', ':Lspsaga outline<cr>', opts)
 -- keymap('n', '<C-l>', ':LSoutlineToggle<cr>', opts)
+-- New Commands lsp
+keymap('n', '<leader>lsf', ':Lspsaga finder<cr>', opts)
+keymap('n', '<leader>lsg', ':Lspsaga goto_definition<cr>', opts)

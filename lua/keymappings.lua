@@ -50,12 +50,14 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 --Tree
 vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle <CR>', opts)
+vim.api.nvim_set_keymap('n', '<C-h>', ':NvimTreeToggle <CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>lt', ':NvimTreeFindFileToggle <CR>', opts)
 
 -- HOP key maps, jumps in lines
 vim.api.nvim_set_keymap('n', '<leader>jw', ":HopPattern <cr>", opts)
 vim.api.nvim_set_keymap('n', '<leader>jcl', ":HopWordCurrentLine <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>jl', ":HopLineStart <CR>", opts)
--- vim.api.nvim_set_keymap('n', 'fl', "<cmd>lua require'hop'.hint_patterns()<cr>", opts)
+-- vim.api.nvim_set_keymap('n', 'fl', "<cmd>lua require'hop'.hint_patterns()<cr>", `pts)
 
 --Telescope
 vim.api.nvim_set_keymap('n', '<leader>ff', ":Telescope find_files <CR>", opts)
@@ -70,7 +72,10 @@ vim.api.nvim_set_keymap('n', '<leader>fi', ":Telescope treesitter <CR>", opts)
 
 
 -- OUTLINE
-vim.api.nvim_set_keymap('n', '<C-l>', ':SymbolsOutline<cr>', opts)
+-- vim.api.nvim_set_keymap('n', '<C-l>', ':SymbolsOutline<cr>', opts)
 
 -- Color theme
 keymap.set('n', '<leader>z', ':Twilight <cr>', opts)
+
+-- Lsp Saga
+-- keymap.set('n', '<leader>ls', ':Lspsaga ', opts)
