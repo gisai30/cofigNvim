@@ -40,7 +40,7 @@ require('packer').startup(function(use)
 	use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
 	use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's build-in LSP
 	use 'hrsh7th/nvim-cmp' -- LSP
-
+	use 'saadparwaiz1/cmp_luasnip'
 	-- Colors codej
 	use {
 		'nvim-treesitter/nvim-treesitter',
@@ -69,5 +69,15 @@ require('packer').startup(function(use)
 	-- Git
 	use 'lewis6991/gitsigns.nvim'
 	use 'tanvirtin/vgit.nvim'
+	
+	-- Mason
+	use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
 
+	-- JavaScript
+	-- use 'SirVer/ultisnips'
+	-- use 'mlaursen/vim-react-snippets'
+	use {'dsznajder/vscode-es7-javascript-react-snippets',
+		run = 'yarn install --frozen-lockfile && yarn compile'
+	}
 end)

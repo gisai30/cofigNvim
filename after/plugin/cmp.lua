@@ -1,6 +1,7 @@
 local status, cmp = pcall(require, "cmp")
 if (not status) then return end
 local lspkind = require 'lspkind'
+require("luasnip/loaders/from_vscode").lazy_load()
 
 cmp.setup({
 	snippet = {
@@ -20,7 +21,9 @@ cmp.setup({
 	}),
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
-		{ name = 'buffer' }
+		{ name = 'buffer' },
+		{ name = 'luasnip' },
+		-- {	name = ''}
 	}),
 	formatting = {
 		format = lspkind.cmp_format({ wirth_text = false, maxwidth = 50 })

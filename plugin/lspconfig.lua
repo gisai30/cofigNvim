@@ -10,7 +10,8 @@ local on_attach = function(client, bufnr)
 	if client.server_capabilities.documentFormattingProvider then
 		vim.api.nvim_command [[augroup Format]]
 		vim.api.nvim_command [[autocmd! * <buffer>]]
-		vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
+		-- vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
+		vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
 		vim.api.nvim_command [[augroup END]]
 	end
 
@@ -26,19 +27,14 @@ local lsp_flasgs = {
 	debounce_text_changes = 150,
 }
 
+
 nvim_lsp.tsserver.setup {
 	on_attach = on_attach,
 	filetype = { "javascript", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
-	cmd = { "typescript-language-server", "--stdio" }
+	cmd = { "typescript-language-server", "--stdio" },
+	capabilities = capabilities
 }
 
-nvim_lsp.emmet_ls.setup {
-	-- on_attach = on_attach,
-	capabilities = capabilities,
-	cmd = { "emmet-ls", "--stdio" },
-	single_file_support = true,
-	filetype = { "html", "sass", "css", "scss" }
-}
 nvim_lsp.lua_ls.setup {
 	settings = {
     Lua = {
@@ -61,19 +57,10 @@ nvim_lsp.lua_ls.setup {
     },
   },
 }
--- nvim_lsp.sumneko_lua.setup {
--- 	on_attach = on_attach,
--- 	settings = {
--- 		Lua = {
--- 			diganostics = {
--- 				-- Get the language server to recognize the 'vim' global
--- 				globals = { 'vim' }
--- 			},
 
--- 			workspace = {
--- 				-- Make the server aware of Neovim runtime
--- 				library = vim.api.nvim_get_runtime_file("", true)
--- 			}
--- 		}
--- 	}
--- }
+nvim_lsp.cssmodules_ls.setup {
+}
+
+nvim_lsp.cssls.setup {
+  capabilities = capabilities,
+}

@@ -10,7 +10,9 @@ vim.api.nvim_set_keymap('i', 'qq', '<ESC>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'qi', '<ESC>wa', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'qe', '<ESC>ei', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'ql', '<ESC>la', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', 'qh', '<ESC>ha', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'q,', '<ESC>la,', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', 'qw', '<CR><ESC>', { noremap = true, silent = true })
 
 
 vim.api.nvim_set_keymap('i', 'qo', '<ESC>o', { noremap = true, silent = true })
@@ -50,7 +52,8 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 --Tree
 vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle <CR>', opts)
-vim.api.nvim_set_keymap('n', '<C-h>', ':NvimTreeToggle <CR>', opts)
+-- vim.api.nvim_set_keymap('n', '<C-h>', ':NvimTreeToggle <CR>', opts)
+vim.api.nvim_set_keymap('n', '<C-h>', ':NvimTreeFindFileToggle <CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>lt', ':NvimTreeFindFileToggle <CR>', opts)
 
 -- HOP key maps, jumps in lines
