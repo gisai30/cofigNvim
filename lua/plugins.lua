@@ -90,7 +90,8 @@ require('packer').startup(function(use)
 	-- JavaScript
 	-- use 'SirVer/ultisnips'
 	-- use 'mlaursen/vim-react-snippets'
-	use {'dsznajder/vscode-es7-javascript-react-snippets',
-		run = 'yarn install --frozen-lockfile && yarn compile'
-	}
+	-- use {'dsznajder/vscode-es7-javascript-react-snippets',
+	-- 	run = 'yarn install --frozen-lockfile && yarn compile'
+	-- }
+	 use 'stevearc/vim-vscode-snippets'
 end)

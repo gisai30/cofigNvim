@@ -8,7 +8,7 @@ let hola = () => {
   console.log(hola);
   // hola mundo
   getse();
-
+  useEffectSnippet;
   let isai = 'Isai';
   return false;
 };
