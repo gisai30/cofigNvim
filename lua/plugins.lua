@@ -5,6 +5,9 @@ require('packer').startup(function(use)
 
 	use 'wbthomason/packer.nvim'
 	use 'nvim-lua/plenary.nvim'
+	
+	--Scrolls
+	use 'psliwka/vim-smoothie'
 
 	-- autocomplete
 	-- use 'jiangmiao/auto-pairs'
@@ -17,8 +20,14 @@ require('packer').startup(function(use)
 	use 'nvim-telescope/telescope.nvim'
 
 	-- Tree explorer
-	use 'kyazdani42/nvim-tree.lua'
-	use 'kyazdani42/nvim-web-devicons'
+	-- use 'nvim-tree/nvim-tree.lua'
+	-- use 'nvim-tree/nvim-web-devicons'
+	use {
+  	'nvim-tree/nvim-tree.lua',
+  	requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  	},
+	}
 	use "lukas-reineke/indent-blankline.nvim"
 	use 'simrat39/symbols-outline.nvim'
 
@@ -32,6 +41,10 @@ require('packer').startup(function(use)
 	use 'nvim-lualine/lualine.nvim'
 	use { "catppuccin/nvim", as = "catppuccin" }
 	use "folke/twilight.nvim"
+
+	-- MiniMap
+	-- use 'wfxr/minimap.vim'
+	use 'echasnovski/mini.map'
 
 	-- Autocomplete
 	use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP

@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -144,6 +149,11 @@ _G.packer_plugins = {
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["minimap.vim"] = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/minimap.vim",
+    url = "https://github.com/wfxr/minimap.vim"
+  },
   ["modes.nvim"] = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/modes.nvim",
@@ -182,7 +192,7 @@ _G.packer_plugins = {
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -197,7 +207,7 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["onedark.vim"] = {
     loaded = true,
@@ -234,11 +244,6 @@ _G.packer_plugins = {
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/twilight.nvim",
     url = "https://github.com/folke/twilight.nvim"
   },
-  ultisnips = {
-    loaded = true,
-    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/ultisnips",
-    url = "https://github.com/SirVer/ultisnips"
-  },
   ["vgit.nvim"] = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/vgit.nvim",
@@ -249,10 +254,10 @@ _G.packer_plugins = {
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
-  ["vim-react-snippets"] = {
+  ["vscode-es7-javascript-react-snippets"] = {
     loaded = true,
-    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/vim-react-snippets",
-    url = "https://github.com/mlaursen/vim-react-snippets"
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/vscode-es7-javascript-react-snippets",
+    url = "https://github.com/dsznajder/vscode-es7-javascript-react-snippets"
   }
 }
 
