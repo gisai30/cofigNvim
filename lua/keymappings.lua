@@ -82,6 +82,7 @@ keymap.set('n', '<leader>z', ':Twilight <cr>', opts)
 
 -- Lsp Saga
 -- keymap.set('n', '<leader>ls', ':Lspsaga ', opts)
---
---Minimap
-keymap.set('n', '<leader>mm', ':MinimapToggle <cr>', opts)
+
+-- Scroll
+keymap.set('n', 'G', 'Gzt')
+
